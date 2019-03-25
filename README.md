@@ -31,7 +31,7 @@ pointer to `FILEHEAD` structure, this parameter can be NULL.
 pointer to `FILEINFOHEAD(BITMAPV5)` structure, this parameter can be NULL.
     
    #### ppa
-pointer to `pixel24` structure, this parameter can be NULL.
+pointer to `pixel24` structure array, this parameter can be NULL.
 
    ### returns
 If invalid file header is found OR bits per pixel is not 24 then return value is 0FFFFFFFFh(specifically in eax).
@@ -57,7 +57,7 @@ pointer to `FILEHEAD` structure, this parameter can be NULL.
 pointer to `FILEINFOHEAD(BITMAPV5)` structure, this parameter can be NULL.
     
    #### ppa
-pointer to `pixel24` structure, this parameter can be NULL.
+pointer to `pixel24` structure array, this parameter can be NULL.
     
    #### pixo
 explicit offset to pixel array.
