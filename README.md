@@ -72,18 +72,19 @@ nothing.
 The following is a sample call (32 bit environment) from the main function where an image is read and then a "negative transform"(function not included in this library) is applied to it and writen to a newly created bitmap file.  
 ```
 invoke createfile, ADDR filename, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL,0
-	mov filehandle, eax 
-	invoke readbitmap24, [filehandle], ADDR fh, ADDR fih, ADDR img_dat
-	invoke closehandle, filehandle
+mov filehandle, eax 
+invoke readbitmap24, [filehandle], ADDR fh, ADDR fih, ADDR img_dat
+invoke closehandle, filehandle
 
-	invoke negtransform_24, ADDR img_dat, 240000
+invoke negtransform_24, ADDR img_dat, 240000
 
-	invoke createfile, ADDR newfilename, GENERIC_WRITE, DO_NOT_SHARE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL,0
-	mov filehandle, eax
-	invoke writebitmap, [filehandle], ADDR fh, ADDR fih, ADDR img_dat, fh.pixoffset, fih.img_size  
-	invoke closehandle, filehandle
+invoke createfile, ADDR newfilename, GENERIC_WRITE, DO_NOT_SHARE, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL,0
+mov filehandle, eax
+invoke writebitmap, [filehandle], ADDR fh, ADDR fih, ADDR img_dat, fh.pixoffset, fih.img_size  
+invoke closehandle, filehandle
 ```
 ### SAMPLE OUTPUT
 
   ![alt text](https://i.imgur.com/NCK14wN.png)
+  
   (i do not own rights to the orignal image)
