@@ -12,7 +12,7 @@ This library contains functions to read/write information from/to a 24-bit .bmp 
   
   3. Add `bitmap24library.lib` to your projects dependencies list.
   
-  4. Make sure to include `bitmap24.inc` file. (this file contains asm function prototypes and standard structures/ADTs)
+  4. Make sure to include `bitmap24.inc` file in calling program. (this file contains asm function prototypes and standard structures/ADTs)
 
 ## Overview
   Contains standard bitmap ADTs/structures with which one can retain all of the bitmap file attributes. This library only supports 24 bit pixels, nevertheless you can still retain ADTs from all pixel formats in bitmap. For refrence structure of the bitmap file, below is a quoted from source:https://en.wikipedia.org/wiki/BMP_file_format
