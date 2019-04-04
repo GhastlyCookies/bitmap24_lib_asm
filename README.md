@@ -28,7 +28,7 @@ This library contains functions to read/write information from/to a 16-bit/24-bi
   
 ## functions
 
-### readbitmap24
+### readbitmapi
   ```
   readbitmapi PROTO, 
      hwnd:HANDLE,        ; handle to the file 
@@ -54,7 +54,7 @@ If invalid file header is found OR bits per pixel is less than 16 then return va
 
 #### NOTE: You can read/write images above 32bpp but you have to explicitly define those structures yourself.
 
-### writebitmap
+### writebitmapi
   ```
   writebitmapi PROTO, 
      hwnd:HANDLE,      ; handle to the file 
