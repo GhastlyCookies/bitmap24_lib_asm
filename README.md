@@ -1,5 +1,5 @@
 # Ghastlys Bitmap Image Reader/Writer
-This library contains functions to read/write information from/to a 16-bit/24-bit/32-bit .bmp image (with std call convention, standard ADTs)
+This 32bit library contains functions to read/write information from/to a 16-bit/24-bit/32-bit .bmp image (with std call convention, standard ADTs)
 
 ## Dependencies
   1. Windows API
